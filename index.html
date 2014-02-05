@@ -192,21 +192,36 @@ $(document).ready(function() {
         color: #fff !important;
       }
       #jumbotron {
-        margin-top: 40px !important;
-        margin-bottom: 32px !important;
-        padding: 100px 0;
-        background-color: #e0e7e0;
-        color: #c0d0c0;
-        border: 1px solid #eee;
-        font-size: 36pt;
+        margin-top: 30px !important;
+        margin-bottom: 27px !important;
+        padding: 70px 20px 70px 350px;
+        width: 420px !important;
+        background: #e0e7e0 url('style/images/bridge.png') no-repeat 100px center;
+        color: #809080;
+        border: 1px solid #d0e0d0;
+        font-size: 20pt;
         text-align: center;
-        border-radius: 5px;
+        border-radius: 10px;
       }
       #elevatorPitch {
         font-size: 12pt;
+        color: #777;
+        padding: 0;
+      }
+      #elevatorPitch p {
+        display: table-cell;
+        vertical-align: top;
+        width: 236px;
+        margin: 0;
+        padding: 5px 15px;
+        border-right: 1px solid #bbb;
+      }
+      #elevatorPitch p:last-of-type {
+        border-right: none;
       }
       #callsToAction {
         text-align: center;
+        margin-top: 20px !important;
       }
       .callToAction {
         display: inline-block;
@@ -249,22 +264,20 @@ $(document).ready(function() {
     </div> <!-- topNav -->
 
     <div id="jumbotron" class="topLevelSection">
-      TODO: Jumbotron
+      Simplified <strong>deployment</strong> and <strong>runtime management</strong> of enterprise-grade applications
     </div> <!-- jumbotron -->
 
     <div id="elevatorPitch" class="topLevelSection">
-      <p>Brooklyn simplifies the <strong>deployment</strong> and <strong>runtime
-      management</strong> of enterprise-grade applications: single-click deploy
-      to your favourite clouds; keep applications healthy and auto-scaled
-      through your choice of automated policies.</p>
-
-      <p>Compose your own applications from a wide range of components and services,
-      and easily write new integrations or policies.</p>
-
+      <p>Easy <strong>single-click deployment</strong> to your favourite clouds.</p
+      ><p>Applications stay <strong>healthy</strong> and <strong>auto-scaled</strong> through your choice of automated policies.</p
+      ><p><strong>Compose</strong> applications from a rich library of components and services, or easily <strong>create</strong> custom
+      integrations and policies.</p>
+<!--
       <p>Brooklyn embraces the DevOps philosophy, and uses existing tools like
       <a href="http://www.getchef.com/" target="_blank">Chef</a>,
       <a href="http://www.saltstack.com/" target="_blank">Salt</a> and
       <a href="http://jclouds.apache.org/" target="_blank">jclouds</a>.</p>
+-->
     </div> <!-- elevatorPitch -->
 
     <div id="callsToAction" class="topLevelSection">
