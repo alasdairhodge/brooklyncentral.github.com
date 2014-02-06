@@ -251,7 +251,20 @@ $(document).ready(function() {
       }
       #footer {
         margin-top: 40px !important;
-        padding-top: 5px !important;
+        position: relative;
+        height: 30pt !important;
+        line-height: 10pt;
+      }
+      #footer-license {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        font-weight: bold;
+      }
+      #footer-ip {
+        position: absolute;
+        right: 0;
+        top: 5px;
         text-align: right;
       }
     </style>
@@ -292,9 +305,13 @@ $(document).ready(function() {
     </div> <!-- callsToAction -->
 
     <div id="footer" class="topLevelSection">
-      <strong>brooklyn is distributed under the Apache License v2.0</strong><br>
-      brooklyn is a registered trademark of Cloudsoft Corporation<br>
-      copyright &copy; 2013-2014 Cloudsoft Corporation
+      <div id="footer-license">
+        brooklyn is distributed under the Apache License v2.0
+      </div>
+      <div id="footer-ip">
+        brooklyn is a registered trademark of Cloudsoft Corporation<br>
+        copyright &copy; 2013-2014 Cloudsoft Corporation
+      </div>
     </div> <!-- footer -->
 
   </body>
