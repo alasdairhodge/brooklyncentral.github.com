@@ -138,15 +138,15 @@ $(document).ready(function() {
 	
    
  <!-- analytics -->
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-30530918-1']);
-	_gaq.push(['_trackPageview']);
-	
-	(function() {
-	  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
+//	var _gaq = _gaq || [];
+//	_gaq.push(['_setAccount', 'UA-30530918-1']);
+//	_gaq.push(['_trackPageview']);
+//	
+//	(function() {
+//	  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+//	  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+//	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+//	})();
 </script>
 
     <!-- New styles for revamped 2014 site design -->
@@ -160,10 +160,10 @@ $(document).ready(function() {
         margin-top: 10px !important;
         height: 45px;
         position: relative;
-        background-image: url(style/images/brooklyn.gif), linear-gradient(to bottom, #fff 0%, #eee 100%);
-        background-origin: border-box, content-box;
-        background-position: 12px 10px, 0 0;
-        background-size: 154px 33px, 100% 100%;
+        background-image: url(style/images/brooklyn-logo-150px.png), linear-gradient(to bottom, #fff 0%, #eee 100%);
+        background-origin: content-box, content-box;
+        background-position: 12px 8px, 0 0;
+        background-size: 148px 36px, 100% 100%;
         background-repeat: no-repeat, repeat-x;
         border: 1px solid #eee;
         border-radius: 5px;
@@ -194,14 +194,20 @@ $(document).ready(function() {
       #jumbotron {
         margin-top: 30px !important;
         margin-bottom: 27px !important;
-        padding: 70px 20px 70px 350px;
-        width: 420px !important;
-        background: #e0e7e0 url('style/images/bridge.png') no-repeat 100px center;
+        width: 403px !important; /* excludes padding and border */
+        height: 202px; /* excludes padding and border */
+        padding: 60px 20px 0 373px;
+        background-color: #e0e7e0;
+        background-image: url('style/images/bridge-large-no-title.png');
+        background-repeat: no-repeat;
+        background-size: 342px 242px;
+        background-position: 10px center;
         color: #809080;
         border: 1px solid #d0e0d0;
         font-size: 20pt;
         text-align: center;
         border-radius: 10px;
+        vertical-align: middle;
       }
       #elevatorPitch {
         font-size: 12pt;
@@ -255,16 +261,16 @@ $(document).ready(function() {
 
     <div id="topNav" class="topLevelSection">
       <ul>
-        <li class="active"><a href="#">home</a></li>
-        <li><a href="#">learn more</a></li>
-        <li><a href="#">get started</a></li>
-        <li><a href="#">documentation</a></li>
-        <li><a href="#">community</a></li>
+        <li class="active"><a href="index.html">home</a></li>
+        <li><a href="learnmore.html">learn more</a></li>
+        <li><a href="getstarted.html">get started</a></li>
+        <li><a href="documentation.html">documentation</a></li>
+        <li><a href="community.html">community</a></li>
       </ul>
     </div> <!-- topNav -->
 
     <div id="jumbotron" class="topLevelSection">
-      Simplified <strong>deployment</strong> and <strong>runtime management</strong> of enterprise-grade applications
+      <p>Simplified <strong>deployment</strong> and <strong>runtime management</strong> of enterprise-grade applications</p>
     </div> <!-- jumbotron -->
 
     <div id="elevatorPitch" class="topLevelSection">
